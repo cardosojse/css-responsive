@@ -35,8 +35,9 @@ h1 {
 
 h2{
     font-size: 2.25rem;
-    color: #87629A;
 }
+
+.purple__title{color: #87629A;}
 
 .container {
     width: 80%;
@@ -49,7 +50,7 @@ h2{
     display: flex;
     /* can't use yet */
     /* gap: 100px; */
-    padding: 3.5em 0;
+    padding: 3em 0;
 }
 
 .col {
@@ -63,7 +64,7 @@ h2{
 }
 
 .col + .col{
-    margin-left: 16px;
+    margin-left: 30px;
 }
 
 .hero {
@@ -96,10 +97,7 @@ h2{
     opacity: .75; 
 }
 
-.footer{
+.bottom__row{
     background-color: #136C72;
-    color: #FFF;
-}
-.footer h2{
     color: #FFF;
 }
