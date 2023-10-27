@@ -73,7 +73,15 @@ header {
     padding: .5em 0;
 }
 
+.nav{
+    width: 30%;
+    padding: .25em 0;
+    margin-left: 8em;
+}
 .nav__list {
+    display: flex;
+    justify-content: space-between;
+    font-size: .8em;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -95,7 +103,6 @@ header {
 .nav__link:hover {
     opacity: .75;
 }
-
 
 .hero {
     padding: 100px 0;
