@@ -67,20 +67,13 @@ h1 {
     margin-left: 30px;
 }
 
-
 header {
     background: #136c72;
-    padding: .5em 0;
+    padding: 1em 0;
 }
 
-.nav{
-    width: 30%;
-    padding: .25em 0;
-    margin-left: 8em;
-}
 .nav__list {
     display: flex;
-    justify-content: space-between;
     font-size: .8em;
     margin: 0;
     padding: 0;
@@ -91,6 +84,10 @@ header {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;;
+}
+
+.nav__item{
+    margin-right: 1em;
 }
 
 .nav__link--button {
