@@ -2,93 +2,95 @@
 
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
 }
 
 :root{
+    /* Colors */
     --clr-bege: #F3EED9;
     --clr-brown: #824936;
     --clr-coal: #222C2A;
     --clr-blue: #23424A;
+    /* Fonts */
+    --font-rbt: 'Roboto', sans-serif;
+    --font-pfd: 'Playfair Display', serif;
 }
 
-h1{
-    color: var(--clr-brown);
-    font-family: 'Playfair Display', serif;
-    font-size: 2.25rem;
+body{
+    margin: 0;
+    font-size: 1.3125rem;
+    font-family: var(--font-rbt);
+    color: var(--clr-coal);
+    line-height: 1.6;
 }
 
-img{ max-width: 100%;}
+img{
+    max-width: 100%;
+}
 
-.wrapper{
-    background-color: var(--clr-bege);
-    min-height: 660px;
-    display: flex;
-    text-align: center;
+h1, h2{
+    font-family: var(--font-pfd);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-top: 0;
+}
 
+section{
+    padding: 4em 0;
 }
 
 .container{
-    width: 80%;
-    max-width: 1128px;
+    width: 90%;
     margin: 0 auto;
+    max-width: 1128px;
 }
 
-.header{align-self: center;}
+.intro{
+    background-color: var(--clr-bege);
+    text-align: center;
+    min-height: 660px;
 
-.header h2{
-    color: var(--clr-coal);
+    display: flex;
+    align-items: center;
+}
+
+.intro__text{
+    text-transform: uppercase;
+    letter-spacing: .6em;
     font-size: 1.125rem;
-    font-weight: 300;
-    letter-spacing: 10px;
+    margin: 0 0 .25;
 }
 
-.header h1{
-    font-size: 3.75rem;
+.intro__title{
+    font-size: 3rem;
+    color: var(--clr-brown);
 }
 
-.row{
-    padding: 5em 0;
-}
-
-.col{
-    display: flex;
-    justify-content: space-between;
-    margin: 2em 0;
-}
-
-.col p{
-    width: 48%;
-    font-size: 1.3rem;
-    color: var(--clr-blue);
-}
-
-.hero{
-    background: var(--clr-coal);
-}
-
-.hero__col{
-    display: flex;
-    justify-content: space-between;
-}
-
-.hero__text{
-    width: 48%;
-}
-
-.hero__text h1{
+.section-title{
     color: var(--clr-bege);
 }
 
-.hero__text p{
-    color: #FFF;
-    font-size: 1.3rem;
-    margin-top: 1.5em;
+.section-title--dark{
+    color: var(--clr-brown);
 }
 
-.hero-secondary{
-    background: var(--clr-brown);
+.section-three{
+    background-color: var(--clr-coal);
+    color: #fff;
+}
+
+.section-four{
+    background-color: var(--clr-brown);
+    color: #fff;
+}
+
+@media (min-width: 800px) {
+    .row{
+        display: flex;
+    }
+    .col{
+        width: 100%;
+    }
+    .col + .col{
+        margin-left: 5em;
+    }
 }
