@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --clr-gunmetal: #2E323F;
+    --clr-arsenic: #3B4050;
+    --clr-grullo: #A59678;
+    --clr-gray: #6F737F;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: 1.125rem;
+}
+
+h1, h2{
+    font-family: 'Oswald', sans-serif;
+    margin-top: 0;
+    line-height: 1.1;
+}
+
+header{
+    background-color: var(--clr-gunmetal);
+    padding: 2em;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-one{
+    color: #FFF;
+    background-color: var(--clr-arsenic);
+    padding: 31em 2em;
+}
+
+.nav-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item{
+    color: #FFF;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.nav-item{
+    margin-top: 1.5em;
+}
+
+.section-title{
+    font-size: 3rem;
+}
+
+.section-title > span{
+    color: var(--clr-grullo);
+}
+
+.cta{
+    display: inline-block;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--clr-grullo);
+    font-family: 'Oswald', sans-serif;
+    padding: .3em 1.25em;  
+    border-radius: 30px;
+}
