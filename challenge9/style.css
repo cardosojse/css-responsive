@@ -37,7 +37,8 @@ header{
 .section-one{
     color: #FFF;
     background-color: var(--clr-arsenic);
-    padding: 31em 2em;
+    padding: 3.5em 2em;
+    border: 1px solid red;
 }
 
 .nav-list{
